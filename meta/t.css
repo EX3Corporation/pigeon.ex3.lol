@@ -1,0 +1,92 @@
+.meta {
+    background: #181a24;
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    font-family: 'Chirp', sans-serif;
+}
+
+.meta h2 {
+    color: #c9cbff;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.meta p {
+    color: #a8aadf;
+    margin: 0.2em 0;
+    font-size: 1rem;
+}
+
+.trans {
+    background: #181a24;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    min-height: 120px;
+    max-height: 60vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    font-family: 'Chirp', sans-serif;
+}
+
+.bubble {
+    margin-bottom: 1.2em;
+    padding: 1em 1.2em;
+    border-radius: 10px;
+    max-width: 80%;
+    word-break: break-word;
+    background: #202232;
+    color: #e0e0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    font-family: 'Chirp', sans-serif;
+}
+
+.bubble.user {
+    background: #2b314a;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bubble.pigeon {
+    background: #202232;
+    margin-right: auto;
+    text-align: left;
+}
+
+.bubble .sender {
+    font-size: 0.95em;
+    color: #9ba2d8;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+}
+
+.bubble .content {
+    color: #d4d6f2;
+    font-size: 1em;
+}
+
+.errmsg {
+    color: #ff5e8a;
+    text-align: center;
+    margin: 2em 0;
+    font-family: 'Chirp', sans-serif;
+}
+
+footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    color: #a8aadf;
+    font-size: 0.95em;
+    font-family: 'Chirp', sans-serif;
+}
+
+footer a {
+    color: #7d82e8;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #9ea3ff;
+}

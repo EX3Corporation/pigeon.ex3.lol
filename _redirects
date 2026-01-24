@@ -1,0 +1,10 @@
+/flow / 301
+/i / 301
+/i/invite /invite 301
+/i/faq /faq 301
+/i/tutorial /tutorial 301
+/flow/privacy /privacy 301
+/i/view /view 301
+/flow/view /view 301
+/i/home / 301
+/flow/* /meta/:splat 301

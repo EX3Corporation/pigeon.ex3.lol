@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAQ / pigeon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/meta/s.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <main class="main-content">
+        <h1><a href="/">pigeon</a>: FAQ</h1>
+        <hr>
+        <h2><a><i class="fa-solid fa-triangle-exclamation"></i> This is outdated and in need of a revise. In the meantime, please read</a> <a href="/tutorial"><u>the tutorial</u></a> <a>if you're actually searching for correct information.</a></h2>
+        <h3>Disclaimer</h3>
+        <p>
+            Some answers are humorous. If they mislead you, find another bot to use, because I don't want to serve you.
+        </p>
+        <h3>In a nutshell</h3>
+        <p>
+            pigeon is a minimalist AI chatbot for Discord. It is designed to listen to a singular channel and respond to
+            all messages (excl bots)
+            within it. These messages are stored in a chat history of up to 200 messages. pigeon can
+            <strong>NOT</strong> process/see
+            attachments, heavily search the web,
+            or do any fancy stuff. <strong>It is intentionally lacking modern features.</strong> pigeon can also be
+            called anywhere
+            within a server @pigeon. <strong>These calls do not process external context (as in the past 5 messages),
+                and these calls also do not contribute to your chat history context.</strong> pigeon can be used as
+            normal in direct messages, but not everything is supported. Your chat can be exported with
+            <strong>/history</strong>,
+            cleared using
+            <strong>/clearhistory</strong>, and imported using
+            <strong>/import</strong>. Import files can be generated using
+            <strong>/history</strong>, clicking "View raw data" and saving the page, such as CTRL+S or <i
+                class="fa-solid fa-ellipsis-vertical"></i> then <i class="fa-solid fa-download"></i> on mobile.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> What is this?<br>
+            <strong>A:</strong> pigeon is a simple AI Discord chatbot. You can talk to it in a server, or DMs. Just here
+            for a chat, you heard?
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> I found a bug! How do I report it?<br>
+            <strong>A:</strong> Email me! <a href="mailto:me@exerinity.com">me@exerinity.com</a><br>
+            If that bug also threw some errors, give me the timestamp of when it happened! Thank you in advance, Batman.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Can I set custom instructions?<br>
+            <strong>A:</strong> soon™
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> What is the timer for?<br>
+            <img src="https://i.exerinity.com/9F3wCixz3X.png" width="300"><br>
+            <strong>A:</strong> pigeon employs a small timer for all messages for a few reasons:
+        <ul>
+            <li>Debugging</li>
+            <li>Used in tandem with the 2.5 second rate limit (read below)</li>
+            <li>Aesthetical reasons. It's not in your way.</li>
+        </ul>
+        Nuff said. There is no way to turn it off.<br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th style="border:1px solid #ccc; padding:4px;">Seconds</th>
+                    <th style="border:1px solid #ccc; padding:4px;">Label</th>
+                    <th style="border:1px solid #ccc; padding:4px;">How / What</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border:1px solid #ccc; padding:4px;">&lt; 2</td>
+                    <td style="border:1px solid #ccc; padding:4px;">fast</td>
+                    <td style="border:1px solid #ccc; padding:4px;">casual chats or greetings</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ccc; padding:4px;">2 – 9</td>
+                    <td style="border:1px solid #ccc; padding:4px;">average</td>
+                    <td style="border:1px solid #ccc; padding:4px;">asking longer questions</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ccc; padding:4px;">&gt; 9</td>
+                    <td style="border:1px solid #ccc; padding:4px;">slow</td>
+                    <td style="border:1px solid #ccc; padding:4px;">writing large amounts of text,<br>translating, or
+                        other complex tasks</td>
+                </tr>
+            </tbody>
+        </table>
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> When was it made?<br>
+            <strong>A:</strong> September 2024. Idea coined July.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Why is the model so stupid?<br>
+            <strong>A:</strong> Because I'm still tuning the system instructions and constantly comparing models. If you
+            want top-tier professional always-correct answers, you're in the wrong place.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Why won't it respond?<br>
+            <strong>A:</strong> Check that the bot has permission to send messages in the channel. If it does, check the
+            set channel using <code>/chat</code>. If none is set, set one using the same command.<br><br>
+            If it does not respond in direct messages, make sure you have DMs enabled from server members. If you do,
+            check the
+            mutual servers - one may have DMs temporarily paused. If it still doesn't work, email me.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Are there limits?<br>
+            <strong>A:</strong> In terms of per chat? Yes, 200 messages. I plan on raising this as development
+            progresses, but it's not important. In terms of a rate limit? Not that I'm aware of. I didn't set any hard
+            limits, but it may hit rate limits.<br><br>
+            If you get over 200 messages, the oldest get overwritten, so it won't just suddenly "stop" when you reach
+            it.<br><br>There is a 2.5 second message cooldown per person to prevent spam. This is a generous limit -
+            Discord is very easy to spam quickly, but 2.5 seconds gives you time to respond.<br><br>Very long messages
+            are paginated into several messages.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Do you store chats?<br>
+            <strong>A:</strong> No, unless you run /history, which it is stored for 3 days. I
+            do not check them unless someone has notified me of misuse or bugs. "External server" is sugarcoating that
+            its a Cloudflare R2 bucket.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> I don't know how to use this! How?<br>
+            <strong>A:</strong> <a href="/i/tutorial" title="READ THE FUCKING MANUAL">RTFM</a>
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Is this just a ChatGPT wrapper?<br>
+            <strong>A:</strong> <br><img src="https://i.exerinity.com/well_yes_but_actually_no"
+                style="width:100%; max-width:600px; margin:0 auto;" title="Well yes, but actually no"
+                alt="Well yes, but actually no">
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> What model do you use?<br>
+            <strong>A:</strong> Gemini 2.5 Flash. pigeon started off on GPT-3.5, moved to Gemma (Gemini's little
+            brother), then LLaMA 4 Scout. Gemini seems pretty sufficient but will most likely change again the future;
+            since pigeon is entirely experimental.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Is it Cloudflare AI?<br>
+            <strong>A:</strong> formerly
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Why is it called pigeon?<br>
+            <strong>A:</strong> <a href="https://en.wikipedia.org/wiki/Pigeon_post" target="_blank">Because historically
+                pigeons delivered messages</a>. The name was chosen arbitrarily - it was just a random word and I later
+            found a good reason for it.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Can it process and/or generate images?<br>
+            <strong>A:</strong> no
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> How much does it cost to run this?<br>
+            <strong>A:</strong> Less than $15 a month. I make it simple, which results in not needing lots of resources.
+            You could run pigeon on a capsicum and still get 3 second replies.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> What is the knowledge cut-off date?<br>
+            <strong>A:</strong> Gemini 2.5 Flash has a knowledge cut-off date of January 2025. <s>I plan on enabling
+                Google
+                search in the future.. if that's even possible.</s> <strong><i>pigeon can now search!</i></strong>
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Can I discuss explicit content with it?<br>
+            <strong>A:</strong> Probably not. I didn't tell it "no", but the model itself might refuse. After all, it is
+            Google.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Why does the model change so much?<br>
+            <strong>A:</strong> It doesn't. The last model switch was in July 2025.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> What is this error?<br>
+            <strong>A:</strong> All errors are logged. If you see one, tell me when it happened, and I'll
+            investigate.<br>
+            Upon errors, pigeon will retry your prompt 3 times. This <i>should</i> still work, but if it doesn't, send
+            it my way.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Why is it so slow?<br>
+            <strong>A:</strong> pigeon does not stream responses unlike websites like ChatGPT. At idle, the response
+            times will be roughly the same. Streaming makes it feel faster.<br>
+            Otherwise, the bot is under some load. Try it later. It's like a hot water system, freeway or home internet,
+            slows
+            down when many use it.
+        </p>
+        <hr>
+        <p>
+            <strong>Q:</strong> Why doesn't it stream responses?<br>
+            <strong>A:</strong> Because it's Discord. A chat app. It is theoretically possible, with Discord's
+            50-requests-a-second limit, but absolutely
+            pointless.<br><br>
+            If you have no idea what that means, it means the bot only responds once generating is done. Things like
+            ChatGPT, Gemini, or Copilot actively stream each word/token as they're generated.
+        </p>
+        <p></p>
+        <hr>
+        <hr>
+        <p>
+            <strong>Q:</strong> How did you make this?<br>
+            <strong>A:</strong> Queue some big-room EDM and read a lot of documentations. It uses discord.js, a
+            structure I made myself (and totally over-engineered), @google/genai to actually talk, and lots of if
+            elses.<br><br>
+            Out of all seriousness, the stack is pretty modular, I might release it sometime.<br><br>
+            For anyone who cares, the bot looks like this:<br>
+            <img src="https://i.exerinity.com/MIoMC0SkYb.png" width="600"
+                alt="the base folder in my windows explorer"><br>
+            Here's what each folder does:
+        <ul>
+            <li><strong>commands</strong>: where the commands are, obviously</li>
+            <li><strong>config</strong>: configuration, where most of the rules and settings exist, that let me change
+                stuff very easily</li>
+            <li><strong>data</strong>: where your stats and IDs are stored</li>
+            <li><strong>events</strong>: where the event handlers are, like messageCreate, ready, interactionCreate, etc
+            </li>
+            <li><strong>logs</strong>: where the error logs are stored (errors are also sent to me on discord via a
+                webhook)</li>
+            <li><strong>node_modules</strong>: idk</li>
+            <li><strong>server</strong>: the backend server, which just provides health check and live stats for my
+                central heartbeat monitoring system. No, this site is not in there.</li>
+            <li><strong>utils</strong>: utilities, like showing activity, errors, and stats</li>
+        </ul>
+        <h3>And the files:</h3>
+        <ul>
+            <li><strong>.env</strong>: basically the keys to the castle</li>
+            <li><strong>bot.js</strong>: the main bot file, where the client is defined and logged in at</li>
+            <li><strong>i.json</strong>: legacy credentials file. i should delete this.</li>
+            <li><strong>main.js</strong>: basically the entry point, the nuclear reactor, the big cheese. It starts...
+                everything, and keeps it alive.</li>
+        </ul>
+        <hr>
+        <h3>
+            If, for some reason, you're still in need of help, please email me <a
+                href="mailto:me@exerinity.com">here</a>. Or, alternatively, I'm in pretty much every guild it's in,
+            so
+            just @ me.
+        </h3>
+        <hr><div>
+            <a class="button" href="/tutorial">Tutorial</a>
+            <a class="button" href="/invite">Invite</a>
+            <a class="button" href="/">Home</a>
+            <a class="button" href="/privacy">Privacy policy</a>
+        </div>
+
+    </main>
+</body>
+
+</html>

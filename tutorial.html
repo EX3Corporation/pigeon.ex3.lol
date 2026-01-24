@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tutorial / pigeon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/meta/s.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <main class="main-content">
+        <h1><a href="/">pigeon</a>: tutorial</h1>
+        <p>pigeon is very easy to set up and begin using. It only takes one command, and then you can chat with it, how
+            cool, am I right?!</p>
+        <p>Below is a basic quick start guide, what else you can do, and then some.</p>
+        <hr>
+        <h2>Getting started</h2>
+        <p><a href="/invite">First, invite pigeon to your server.</a> You will need the <strong>Manage Guild</strong>
+            permission as a baseline, and the same permissions pigeon requires. If not, ask someone higher.</p>
+        <p>Once you have invited pigeon, I recommend you create a new channel <i>just for it</i>. Since pigeon is
+            designed to occupy and listen to an entire channel, unless you already have an unused throwaway channel,
+            create one.</p>
+        <p>Once you have created / selected a channel to use, you can initiate it using <strong>/chat</strong> and
+            append the target channel. <strong>Only people with Manage Server can do this.</strong> After that, pigeon
+            is immediately available to use, and you're all set!</p>
+        <img src="https://vienna.exerinity.dev/57q8Mu5MNx.png" class="pic">
+        <hr>
+        <h2>Managing your chat</h2>
+        <p>pigeon keeps up to 200 messages per chat, and the oldest ones disappear once you reach 200. You can quickly
+            reset and export/import your chat at any time. Read on...</p>
+        <h3>Resetting your chat</h3>
+        <p>There are two ways to reset your chat:</p>
+        <ul>
+            <li>Run <strong>/clearhistory</strong> to immediately clear</li>
+            <li>Run <strong>/history clear:true</strong> to export your chat and clear when done</li>
+        </ul>
+        <h3>Exporting your chat</h3>
+        <p>You can easily export your chat using <strong>/history</strong>. As stated above, if you append
+            <strong>clear:true</strong> to the execution, it clears your chat after exporting it. pigeon will then
+            generate a JSON file containing the messages and basic info about you and the server you used it in. It then
+            uploads it, where it is kept for 3 days before automatic deletion. pigeon will then return a link to this
+            website where you can view your transcript and also allow you to download the JSON it created.
+        </p>
+        <img src="https://vienna.exerinity.dev/z9BXm934kK.png" class="pic">
+        <h3>Importing your chat</h3>
+        <p>From the transcript viewer, go down to the bottom and find "View raw data". Right-click or long-press it and
+            press "Save link as". Go back to Discord, then run <strong>/import</strong> and attach the JSON file. You
+            cannot import other peoples transcripts, unless you edit the JSON to match <i>you</i>, but that would be a
+            very petty thing to do.</p>
+        <img src="https://vienna.exerinity.dev/EsAKnmSLWW.png" class="pic">
+        <hr>
+        <h2>Managing pigeon</h2>
+        <p><strong>Let's cut to the chase</strong>: pigeon can only be used in channels you designate it to, and
+            anywhere in your server
+            when manually called. It will not send random messages, randomly DM you, none of that. pigeon can easily be
+            disconnected and paused. Read on...</p>
+        <h3>Pausing pigeon from responding</h3>
+        <p>Run <strong>/ignore</strong> with how long you want pigeon to pause. You can interrupt this by using
+            <strong>/unignore</strong>.</p>
+        <h3>Stop pigeon from responding</h3>
+        <p>Run <strong>/remove</strong>. <strong>Only people with Manage Server can do this</strong>.</p>
+        <h3>Change / check what channel pigeon listens to</h3>
+        <p>Run <strong>/chat</strong> with nothing added to check what channel, and <strong>/chat</strong> with a
+            channel selected to change.</p>
+        <hr>
+        <p>That's pretty much everything! If you have further questions, <a href="https://exerinity.com/twitter">feel
+                free to ask!</a> Or, browse the site further with the buttons below!</p>
+        <hr>
+        <div>
+            <a class="button" href="/">Home</a>
+            <a class="button" href="/invite">Invite</a>
+            <a class="button" href="/faq">FAQ</a>
+            <a class="button" href="/privacy">Privacy policy</a>
+        </div>
+    </main>
+</body>
+
+</html>
