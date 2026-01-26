@@ -13,7 +13,6 @@
     <main class="main-content">
         <h1><a href="/">pigeon</a>: FAQ</h1>
         <hr>
-        <h2><a><i class="fa-solid fa-triangle-exclamation"></i> This is outdated and in need of a revise. In the meantime, please read</a> <a href="/tutorial"><u>the tutorial</u></a> <a>if you're actually searching for correct information.</a></h2>
         <h3>Disclaimer</h3>
         <p>
             Some answers are humorous. If they mislead you, find another bot to use, because I don't want to serve you.
@@ -160,25 +159,17 @@
             <strong>Q:</strong> Why is it called pigeon?<br>
             <strong>A:</strong> <a href="https://en.wikipedia.org/wiki/Pigeon_post" target="_blank">Because historically
                 pigeons delivered messages</a>. The name was chosen arbitrarily - it was just a random word and I later
-            found a good reason for it.
+            found a good reason for it. You know, because pigeon literally delivers AI generated messages?
         </p>
         <hr>
         <p>
             <strong>Q:</strong> Can it process and/or generate images?<br>
-            <strong>A:</strong> no
+            <strong>A:</strong> no, and never.
         </p>
         <hr>
         <p>
             <strong>Q:</strong> How much does it cost to run this?<br>
-            <strong>A:</strong> Less than $15 a month. I make it simple, which results in not needing lots of resources.
-            You could run pigeon on a capsicum and still get 3 second replies.
-        </p>
-        <hr>
-        <p>
-            <strong>Q:</strong> What is the knowledge cut-off date?<br>
-            <strong>A:</strong> Gemini 2.5 Flash has a knowledge cut-off date of January 2025. <s>I plan on enabling
-                Google
-                search in the future.. if that's even possible.</s> <strong><i>pigeon can now search!</i></strong>
+            <strong>A:</strong> Basically nothing. Hosting is cheap and tokens are too. Roughly, under $15 a month.
         </p>
         <hr>
         <p>
@@ -197,61 +188,23 @@
             <strong>A:</strong> All errors are logged. If you see one, tell me when it happened, and I'll
             investigate.<br>
             Upon errors, pigeon will retry your prompt 3 times. This <i>should</i> still work, but if it doesn't, send
-            it my way.
+            it my way.<br><br>Common errors include "cannot read property 0 of undefined", which basically means
+            nothing; just re-send your message. If you get a long error about Google AI, it's self-explanatory from
+            there.
         </p>
         <hr>
         <p>
             <strong>Q:</strong> Why is it so slow?<br>
-            <strong>A:</strong> pigeon does not stream responses unlike websites like ChatGPT. At idle, the response
-            times will be roughly the same. Streaming makes it feel faster.<br>
-            Otherwise, the bot is under some load. Try it later. It's like a hot water system, freeway or home internet,
-            slows
-            down when many use it.
+            <strong>A:</strong> Because it isn't tuned for speed. Also, pigeon does not stream ongoing responses, it
+            only responds once the engine is finished; with everything it generated. Streaming is a bit of an illusion
+            to make it feel faster, but the times are roughly the same as GPT 4o.
         </p>
-        <hr>
-        <p>
-            <strong>Q:</strong> Why doesn't it stream responses?<br>
-            <strong>A:</strong> Because it's Discord. A chat app. It is theoretically possible, with Discord's
-            50-requests-a-second limit, but absolutely
-            pointless.<br><br>
-            If you have no idea what that means, it means the bot only responds once generating is done. Things like
-            ChatGPT, Gemini, or Copilot actively stream each word/token as they're generated.
-        </p>
-        <p></p>
-        <hr>
         <hr>
         <p>
             <strong>Q:</strong> How did you make this?<br>
-            <strong>A:</strong> Queue some big-room EDM and read a lot of documentations. It uses discord.js, a
-            structure I made myself (and totally over-engineered), @google/genai to actually talk, and lots of if
-            elses.<br><br>
-            Out of all seriousness, the stack is pretty modular, I might release it sometime.<br><br>
-            For anyone who cares, the bot looks like this:<br>
-            <img src="https://i.exerinity.com/MIoMC0SkYb.png" width="600"
-                alt="the base folder in my windows explorer"><br>
-            Here's what each folder does:
-        <ul>
-            <li><strong>commands</strong>: where the commands are, obviously</li>
-            <li><strong>config</strong>: configuration, where most of the rules and settings exist, that let me change
-                stuff very easily</li>
-            <li><strong>data</strong>: where your stats and IDs are stored</li>
-            <li><strong>events</strong>: where the event handlers are, like messageCreate, ready, interactionCreate, etc
-            </li>
-            <li><strong>logs</strong>: where the error logs are stored (errors are also sent to me on discord via a
-                webhook)</li>
-            <li><strong>node_modules</strong>: idk</li>
-            <li><strong>server</strong>: the backend server, which just provides health check and live stats for my
-                central heartbeat monitoring system. No, this site is not in there.</li>
-            <li><strong>utils</strong>: utilities, like showing activity, errors, and stats</li>
-        </ul>
-        <h3>And the files:</h3>
-        <ul>
-            <li><strong>.env</strong>: basically the keys to the castle</li>
-            <li><strong>bot.js</strong>: the main bot file, where the client is defined and logged in at</li>
-            <li><strong>i.json</strong>: legacy credentials file. i should delete this.</li>
-            <li><strong>main.js</strong>: basically the entry point, the nuclear reactor, the big cheese. It starts...
-                everything, and keeps it alive.</li>
-        </ul>
+            <strong>A:</strong> Queue some big-room EDM and read a lot of documentations. It uses discord.js,
+            @google/genai to actually talk, and lots of if elses.<br><br>
+            Out of all seriousness, the source code is available here: <a href="https://github.com/EX3Corporation/pigeon" target="_blank">https://github.com/EX3Corporation/pigeon</a>
         <hr>
         <h3>
             If, for some reason, you're still in need of help, please email me <a
@@ -259,7 +212,8 @@
             so
             just @ me.
         </h3>
-        <hr><div>
+        <hr>
+        <div>
             <a class="button" href="/tutorial">Tutorial</a>
             <a class="button" href="/invite">Invite</a>
             <a class="button" href="/">Home</a>
